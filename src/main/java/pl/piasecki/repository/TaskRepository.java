@@ -1,4 +1,8 @@
 package pl.piasecki.repository;
 
-public interface TaskRepository {
+import org.springframework.data.repository.CrudRepository;
+import pl.piasecki.domain.Task;
+
+public interface TaskRepository extends CrudRepository<Task, Long> {
+
 }
